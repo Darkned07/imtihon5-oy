@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countries</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- header start -->
+    <header class="header">
+      <div class="container header__container">
+        <a class="header__logo" href="./index.html">
+          <span class="header__span">Where in the world?</span>
+        </a>
+        <button id="dark" type="submit">
+          <img src="./img/dark.svg" alt="" />Dark Mode
+        </button>
+        <button id="light" class="hidden" type="submit">
+          <img src="./img/light.svg" alt="" />Dark Mode
+        </button>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- main start -->
+    <main class="main">
+      <!-- countries search section start -->
+      <section class="countries">
+        <div class="countries__container container">
+          <div class="countries__content">
+            <form id="form">
+              <div class="search-container">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input
+                  class="form__input"
+                  id="form__input"
+                  type="text"
+                  placeholder="Search for a country..."
+                  aria-label="search"
+                  autocomplete="off"
+                />
+              </div>
+            </form>
+            <select class="countries__select" name="" id="">
+              <option class="countries__option" value="">Filter Region</option>
+              <option class="countries__option" value="africa">Africa</option>
+              <option class="countries__option" value="america">America</option>
+              <option class="countries__option" value="asia">Asia</option>
+              <option class="countries__option" value="europe">Europe</option>
+              <option class="countries__option" value="oceania">Oceania</option>
+            </select>
+          </div>
+        </div>
+      </section>
+      <!-- countries search section start -->
+
+      <section class="list">
+        <div class="container list__container">
+          <div class="countries-container"></div>
+          <!-- <ul id="user" class="list__ul">
+            <li class="list__li">
+              <img
+                class="lists__content"
+                src="./img/germany.png"
+                width="267px"
+                height="160px"
+                alt=""
+              />
+              <div class="list__li__content">
+                <h2 class="list__li__content__h2">Germany</h2>
+                <h3 class="lists__li">
+                  Population:<span class="lists__li__span">81,770,900</span>
+                </h3>
+                <h3 class="lists__li">
+                  Region:<span class="lists__li__span">Europe</span>
+                </h3>
+                <h3 class="lists__li">
+                  Capital:<span class="lists__li__span">Berlin</span>
+                </h3>
+              </div>
+            </li>
+          </ul> -->
+        </div>
+      </section>
+    </main>
+    <!-- main end -->
+
+    <script src="./app.js"></script>
+  </body>
+</html>
